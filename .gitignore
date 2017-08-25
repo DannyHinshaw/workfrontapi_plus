@@ -18,6 +18,9 @@ typings
 
 .idea
 
+# Sphinx
+docs/_build
+
 # WF_API+ auto-gen files/dirs
 develop-eggs/
 eggs/
