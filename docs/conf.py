@@ -17,9 +17,13 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, '/Users/dannyhinshaw/Desktop/Work/ContractWork/idt.com/testing/workfrontapi_plus/workfrontapi_plus')
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+import mock
+MOCK_MODULES = []
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
 
 
 # -- General configuration ------------------------------------------------
@@ -191,5 +195,3 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
